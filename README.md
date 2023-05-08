@@ -24,6 +24,7 @@ Replace `[projects_repository]` with the HTTPS URL or SSH key of this repository
 `php artisan key:generate`
 10. Run the following command in the terminal to create tables and seed user data for login:
 `php artisan migrate --seed`
+
 The application is now ready to use. Go to your localhost URL `http://localhost/anagram/public/` to access the application.
 
 ## Usage
