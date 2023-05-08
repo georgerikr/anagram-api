@@ -1,0 +1,36 @@
+{
+  "_jsx-runtime-fc3b83bc.js": {
+    "file": "assets/jsx-runtime-fc3b83bc.js"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-0a1f2fb0.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.jsx": {
+    "css": [
+      "assets/app-0a1f2fb0.css"
+    ],
+    "file": "assets/app-503c5157.js",
+    "imports": [
+      "_jsx-runtime-fc3b83bc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  },
+  "resources/js/swagger.css": {
+    "file": "assets/swagger-23d0d482.css",
+    "src": "resources/js/swagger.css"
+  },
+  "resources/js/swagger.js": {
+    "css": [
+      "assets/swagger-23d0d482.css"
+    ],
+    "file": "assets/swagger-97d4a7fd.js",
+    "imports": [
+      "_jsx-runtime-fc3b83bc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/swagger.js"
+  }
+}

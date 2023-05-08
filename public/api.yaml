@@ -1,0 +1,70 @@
+openapi: 3.0.0
+info:
+  title: 'Anagram API'
+  description: 'RESTful API endpoints for fetching wordbase to the application and finding anagrams for given word'
+  version: 1.0.0
+externalDocs:
+  description: GitHub Repository
+  url: https://github.com/georgerikr/anagram-api
+servers:
+  -
+    url: 'your_url_here'
+    description: 'Local development server'
+paths:
+  /write:
+    post:
+      tags:
+        - Anagram
+      summary: 'Load the data from external wordbase to local database'
+      operationId: cd7dbb887c8589091d057403d0f15b02
+      responses:
+        '200':
+          description: "Responds 'Data loaded successfully' or 'Data has already been loaded'"
+          content:
+            application/json:
+              schema:
+                properties:
+                  message: { description: 'Success message', type: string, example: 'Data loading requests response message' }
+                  data_loaded: { description: 'Example of data loaded successfully', type: array, items: { type: string }, example: ['Data loaded successfully'] }
+                  data_already_loaded: { description: 'Example of data has already been loaded', type: array, items: { type: string }, example: ['Data has already been loaded'] }
+                type: object
+  /input:
+    post:
+      tags:
+        - Anagram
+      summary: 'Send input word and receive anagrams of that word from database'
+      operationId: 12970c892e6561c99460bd3469f9639a
+      requestBody:
+        description: 'Example data to send for the application'
+        content:
+          application/json:
+            schema:
+              properties:
+                data:
+                  type: string
+                  example: krae
+              type: object
+            examples:
+              valid_word:
+                value:
+                  data: krae
+                summary: 'Example of a valid word, responds with anagrams of that word'
+              invalid_word:
+                value:
+                  data: qwerty
+                summary: "Example of an invalid word, doesn't have any anagrams"
+              empty_word:
+                value:
+                  data: ''
+                summary: 'Example of an empty word, asks to enter a word'
+      responses:
+        '200':
+          description: "Responds 'Anagrams of the word: erak, kaer, kare, kera, rake', 'No anagrams for given word', 'Form is empty, enter a word,' or 'Database is empty, click on 'load' button'"
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - { properties: { anagrams: { description: 'Array of anagrams', type: array, items: { type: string, example: erak } } }, type: object }
+                  - { properties: { message: { description: 'Error message', type: string, example: 'No anagrams for given word' } }, type: object }
+                  - { properties: { message: { description: 'Error message', type: string, example: 'Form is empty, enter a word' } }, type: object }
+                  - { properties: { message: { description: 'Error message', type: string, example: "Database is empty, click on 'load' button" } }, type: object }

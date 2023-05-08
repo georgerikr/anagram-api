@@ -1,0 +1,21 @@
+{
+    "Data loaded successfully": "Andmed on edukalt laetud",
+    "Data has already been loaded": "Andmed on juba laetud",
+    "Form is empty, enter a word": "Vorm on tühi, sisestage sõna",
+    "Database is empty, click on 'load' button": "Andmebaas on tühi, klikkige 'laadi' nuppu",
+    "No anagrams for given word": "Anagramme pole",
+    "Anagrams of the word: ": "Anagrammid: ",
+
+    "Login": "Logi sisse",
+    "Enter your email": "Sisestaga oma email",
+    "Enter your password": "Sisestage oma parool",
+    "Wrong credentials, try again!": "Valed andmed, proovige uuesti!",
+
+    "Search for word anagrams": "Otsi sõna anagramme",
+    "Load the wordbase:": "Laadi sõnabaas:",
+    "Load": "Laadi",
+    "Wait, data is loading": "Oodake, andmeid laetakse",
+
+    "Enter a word...": "Sisestage sõna...",
+    "Send": "Saada"
+}
