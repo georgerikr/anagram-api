@@ -57,4 +57,4 @@ You can access the API documentation for the application by navigating to the `h
 
 ### Live application
 
-Live application is located at `https://kexdev.ee/anagram/public/`. User credentials for the login are the same as in the usage guide. The API documentation is also available at the URL `https://kexdev.ee/anagram/public/docs`.
+Live application is located at https://kexdev.ee/anagram/public/. User credentials for the login are the same as in the usage guide. The API documentation is also available at the URL `https://kexdev.ee/anagram/public/docs`.
