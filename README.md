@@ -12,10 +12,10 @@ To download and run the application on your local machine, follow these steps:
 2. Clone the repository by running the following command in the terminal: 
 `git clone [projects_repository] anagram`
 Replace `[projects_repository]` with the HTTPS URL or SSH key of this repository. The "anagram" after the repository URL creates a folder named "anagram" and clones the repository into that folder.
-3. After the clone is complete, navigate to the "anagram" folder and run the following command to install dependencies from the lock file:
+3. After the clone is complete, navigate to the "anagram" folder and run the following command to install dependencies:
 `composer install`
-4. Run the following command to install the Node modules:
-`npm install` (npm version 9.4.1)
+4. Run the following command to install packages:
+`npm install` (npm version 9.x.x)
 5. Create a MySQL database for the application.
 6. Open the `.env.example` file in the application's root folder and change its name to `.env`.
 7. In the `.env` file, add the name, username, and password of the created database, and change the `APP_URL` to `http://localhost/anagram/public/`.
